@@ -1,0 +1,25 @@
+.navbar-brand, h2 {
+    font-family: "Anton", sans-serif;
+    font-size: 2.5rem;
+    color: rgb(197, 75, 5)!important;
+}
+header {
+    font-family: "Anton", sans-serif;
+    
+}
+body {
+    color: rgb(216, 212, 212);
+    background-image: linear-gradient(to right, #202020, #222222, #202020);
+
+}
+
+nav {
+    padding-top: 10px ;
+    margin-bottom: 30px ;
+    border-bottom: solid 1px   rgb(216, 212, 212) ;
+    background-image: linear-gradient(to right, #202020, #222222, #202020);
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
