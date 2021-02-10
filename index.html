@@ -17,12 +17,14 @@
 <body>
    
         <nav class="navbar navbar-dark sticky-top">
-            <a class="navbar navbar-brand mx-auto" href="index.html">FORGED GAMING</a>
-            <button class="navbar-toggler ml auto" type="button" data-toggle="collapse" data-target="#navbarMenu">
+            <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <a class="navbar navbar-brand mr-auto" href="index.html">FORGED GAMING</a>
+           
+            </button>
             <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ">
                     <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Hours & Location</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Event Calendar</a></li>
@@ -36,19 +38,17 @@
 
         
         
-            <div class="row row-content align-itmes-center">
-                <div class="col-md-8 mx-auto mb-5">
-                    <a role="button" data-toggle="modal" data-target="galleryModal">
+            <div class="row row-content ">
+                <div class="col-md-8 mx-auto mb-5">                    
                     <div id="picCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#picCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#picCarousel" data-slide-to="1" class="active"></li>
-                            <li data-target="#picCarousel" data-slide-to="2" class="active"></li>
+                            <li data-target="#picCarousel" data-slide-to="1" class=""></li>
+                            <li data-target="#picCarousel" data-slide-to="2" class=""></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100 " src="imgs/beer(1).jpg" alt="Drinks">                           
-                                
+                                <img class="d-block w-100 " src="imgs/beer(1).jpg" alt="Drinks">                         
                             </div>
                             <div class="carousel-item ">
                                 <img class="d-block w-100" src="imgs/gaming.jpg" alt="Gaming">
@@ -69,7 +69,7 @@
                 </a>
                 </div>
             </div>
-            <div class="row row-content align-items-center mt 5">
+            <div class="row row-content align-items-center mt-5">
                 <div class="col-sm-5 col-md-4">
                     <h2 class="">About Forge</h2>
                 </div>
@@ -84,29 +84,87 @@
                     <h2>Choose Your Game</h2>
                 </div>
             </div>
-            <div class="row  align-items-center mt-5 my-auto">                
-                <div class="col col-md-3 ml-auto ">                    
-                    <div class="card" id="xbox">
-                         <img class="img-responsive" src="imgs/-Xbox_one_logo.svg.png" alt="Xbox One"> 
-                    </div>
+            <div class="row  align-items-center mt-5 my-auto">
+                               
+                <div class="col-md-3 ml-auto "> 
+                    <a role="button" id="gameModal">                 
+                        <div class="card " id="xbox">
+                            
+                            <img class="card-img-top img-responsive thumbnail" src="imgs/-Xbox_one_logo.svg.png" alt="Xbox One"> 
+                            <div class="card-body">XBOX One</div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col col-md-3 mr-auto">      
-                    <div class="card " id="ps5"> 
-                        <img class="img-responsive" src="imgs/ps5.png" alt="Xbox One"> 
-                    </div>
+                
+                <div class="col-md-3 mr-auto">  
+                    <a role="button" id="gameModal"> 
+                        <div class="card " id="ps5"> 
+                            
+                            <img class="card-img-top img-responsive thumbnail" src="imgs/ps5.png" alt="PS5"> 
+                            <div class="card-body"> Playstation 5</div>
+                        </div>
+                </a>   
                 </div>  
-                <div class="col col-md-3 mr-auto">      
-                    <div class="card " id="pc"> 
-                        <img class="img-responsive" src="imgs/pc.png" alt="Xbox One"> 
-                    </div>
+                <div class="col-md-3 mr-auto">
+                    <a role="button" id="gameModal">     
+                        <div class="card " id="pc"> 
+                            <img class="card-img-top img-responsive thumbnail" src="imgs/pc.png" alt="PC">
+                            <div class="card-body">PC Gaming</div> 
+                        </div>
+                </a> 
                 </div> 
-                <div class="col col-md-3 mr-auto">      
-                    <div class="card " id="arcade"> 
-                        <img class="img-responsive" src="imgs/arcade.jpg" alt="Xbox One"> 
-                    </div>
+                <div class="col-md-3 mr-auto">
+                    <a role="button" id="gameModal">      
+                        <div class="card " id="arcade"> 
+                            <img class="card-img-top img-responsive thumbnail" src="imgs/arcade.jpg" alt="Arcade"> 
+                            <div class="card-body">Arcade Classics</div>
+                        </div>
+                    </a> 
                 </div>             
             </div>  
-        </div>   
+        </div>  
+        
+        <div class="modal fade" id="reserveGame" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Reserve Your Console</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="text-white" aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form >
+                            <div class="row form-group">
+                                <label clas="col-sm-7 col-form-label" for="gameConsole">Game Console</label>
+                                <div class="col">
+                                    <select class="form-control" name="gameConsole" id="gameConsole">
+                                        <option value="select">Choose Console</option>
+                                        <option value="xboxOne">Xbox One</option>  
+                                        <option value="ps5">Playstation 5</option>
+                                        <option value="pc">PC</option>
+                                        <option value="Arcade">Arcade</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-7 col-form-label" for="date">Date</label>
+                                <div class="col">
+                                    <input class="form-control"  type="date" name="date" id="date">   
+                                </div> 
+                            </div>
+                        </form>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         
         <footer class="site-footer">
             <div class="container">
@@ -129,6 +187,7 @@
     
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>     
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  
+    <script src="js/scripts.js"> </script>   
 </body>
 </html>

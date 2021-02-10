@@ -22,6 +22,9 @@ nav {
 .carousel-item {
     max-height: 450px;
 }
+.carousel {
+    border: solid 1px rgb(216, 212, 212) ;
+}
 
 
 .card {
@@ -29,29 +32,21 @@ nav {
     margin-left: 5vh;
     text-align: center;
     background-image: linear-gradient(to right, #202020, #222222, #202020);
-    height: 300px;
+    min-height: 19rem;
    
   }
-  img {
+
+  .card:hover {
+        
+    transform: translate3D(0,-1px,0) scale(1.05);
+  
+}
+
+.modal-content {
+    background-image: linear-gradient(to right, #202020, #222222, #202020);
+}
  
-    width:100%;
-    height:auto;
-}
 
-#xbox {
-    padding-top: 30px;
-}
-
-#ps5 {
-    padding-top: 90px;
-}
-
-#pc {
-    padding-top: 75px;
-}
-#arcade {
-    padding-top: 5px;
-}
 
   footer {
     text-align: center;
@@ -63,3 +58,12 @@ nav {
   i {
     color: rgb(197, 75, 5) ;
   }
+  img {
+ 
+    width:100%;
+    height:auto;
+}
+
+
+  
+
