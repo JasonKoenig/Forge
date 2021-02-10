@@ -1,15 +1,21 @@
-.navbar-brand, h2 {
+.navbar-brand {
     font-family: "Anton", sans-serif;
     font-size: 2.5rem;
     color: rgb(197, 75, 5)!important;
+}
+h2 {
+    color: ;
 }
 header {
     font-family: "Anton", sans-serif;
     
 }
 body {
+    
     color: rgb(216, 212, 212);
-    background-image: linear-gradient(to right, #202020, #222222, #202020);
+    background-image:url(imgs/forgebg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 
 }
 
@@ -18,6 +24,9 @@ nav {
     margin-bottom: 30px ;
     border-bottom: solid 1px   rgb(216, 212, 212) ;
     background-image: linear-gradient(to right, #202020, #222222, #202020);
+}
+.caption {
+    background-color:  rgba(0, 0, 0, 0.5);;
 }
 .carousel-item {
     max-height: 450px;
@@ -28,11 +37,12 @@ nav {
 
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-left: 5vh;
     text-align: center;
     background-image: linear-gradient(to right, #202020, #222222, #202020);
     min-height: 19rem;
+    margin-bottom: 20px;
    
   }
 
@@ -49,9 +59,10 @@ nav {
 
 
   footer {
+    background-image: linear-gradient(to right, #202020, #222222, #202020);
     text-align: center;
-    margin-top: 100px ;
-    margin-bottom: none;
+   
+    
     border-top: solid 1px   rgb(216, 212, 212) ;
   }
 
@@ -59,7 +70,7 @@ nav {
     color: rgb(197, 75, 5) ;
   }
   img {
- 
+    max-height: 450px;
     width:100%;
     height:auto;
 }
