@@ -14,7 +14,7 @@
     <title>Forge Gaming Bar</title>
     <script src="https://kit.fontawesome.com/9981584e4c.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="mask">
     <div class="container-fluid">
         <nav class="navbar navbar-dark sticky-top">
             <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarMenu">
@@ -23,6 +23,7 @@
             <a class="navbar navbar-brand mr-auto" href="index.html">FORGED GAMING</a>
            
             </button>
+            <button type="button" class="btn btn-success gameModal">Reserve Now</button>
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ">
                     <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
@@ -34,9 +35,10 @@
             </div>
         </nav>
     </div>
-
-        <div class="container container-fluid caption">
-
+   
+    
+        <div class="container container-fluid mask">
+            
         
         
             <div class='row row-content'>
@@ -94,26 +96,26 @@
             <div class="row  align-items-center mt-5 my-auto">
                                
                 <div class="col-md-3 ml-auto "> 
-                    <a role="button" id="gameModal">                 
+                    <a role="button" class="gameModal">                 
                         <div class="card " id="xbox">
                             
-                            <img class="card-img-top img-responsive thumbnail" src="imgs/-Xbox_one_logo.svg.png" alt="Xbox One"> 
+                            <img class="card-img-top img-responsive thumbnail" src="imgs/xbox.png" alt="Xbox One"> 
                             <div class="card-body">XBOX One</div>
                         </div>
                     </a>
                 </div>
                 
                 <div class="col-md-3 mr-auto">  
-                    <a role="button" id="gameModal"> 
+                    <a role="button" class="gameModal"> 
                         <div class="card " id="ps5"> 
                             
-                            <img class="card-img-top img-responsive thumbnail" src="imgs/ps5.png" alt="PS5"> 
+                            <img class="card-img-top img-responsive thumbnail" src="imgs/ps5(1).png" alt="PS5"> 
                             <div class="card-body"> Playstation 5</div>
                         </div>
                 </a>   
                 </div>  
                 <div class="col-md-3 mr-auto">
-                    <a role="button" id="gameModal">     
+                    <a role="button" class="gameModal">     
                         <div class="card " id="pc"> 
                             <img class="card-img-top img-responsive thumbnail" src="imgs/pc.png" alt="PC">
                             <div class="card-body">PC Gaming</div> 
@@ -121,9 +123,9 @@
                 </a> 
                 </div> 
                 <div class="col-md-3 mr-auto">
-                    <a role="button" id="gameModal">      
+                    <a role="button" class="gameModal">      
                         <div class="card " id="arcade"> 
-                            <img class="card-img-top img-responsive thumbnail" src="imgs/arcade.jpg" alt="Arcade"> 
+                            <img class="card-img-top img-responsive thumbnail" src="imgs/arcade(1).jpg" alt="Arcade"> 
                             <div class="card-body">Arcade Classics</div>
                         </div>
                     </a> 
@@ -143,6 +145,14 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form >
+                            <div class="row form-group">
+                                <label class="col-6 col-form-label" for="text">Name</label>
+                                <div class="col-sm-12">
+                                    
+                                    <input class="form-control"  type="text" name="name" id="name">   
+                                    
+                                </div> 
+                            </div>
                             <div class="row form-group">
                                 <label clas="col-sm-7 col-form-label" for="gameConsole">Game Console</label>
                                 <div class="col">
@@ -166,7 +176,7 @@
                   
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Reserve Now</button>
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
@@ -191,6 +201,7 @@
                 </div>
             </div>
         </footer>
+    </div>
     
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
