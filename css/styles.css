@@ -25,7 +25,6 @@ h2 {
 }
 
 i {
-    
     color: rgb(197, 75, 5) ;
   }
 
@@ -34,27 +33,15 @@ nav {
     
     padding-top: 10px ;
     margin-bottom: 30px ;
-
+    border-bottom: solid 1px   rgb(216, 212, 212) ;
+    background-image: linear-gradient(to right, #202020, #222222, #202020);
 }
 .navbar-brand {
-    
-    
+   
+    text-align: center;
     font-family: "Anton", sans-serif;
     font-size: 2.5rem;
     color: rgb(197, 75, 5)!important;
-}
-
-.navBtn {
-    color:rgb(197, 75, 5)!important; 
-}
-.btn-link {
-    padding: 0;
-}
-.contact {
-    padding:.5rem;
-}
-.btn-instagram {
-    margin-left: -11rem;
 }
 
 
@@ -73,10 +60,10 @@ nav {
 /*Card*/
 
 .card {
-   border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-left: 5vh;
     text-align: center;
-    background:none;
+    
     min-height: 15rem;
     margin-bottom: 20px;
     color: rgb(216, 212, 212);
@@ -107,7 +94,7 @@ footer {
     text-align: center;
    
     
-    border-top: solid 1px   rgb(216, 212, 212) ;
+    
   }
 
 
